@@ -53,13 +53,9 @@ def ask(words):
     print(question + '?')
 
 
-def main():
-    question = set()
+if __name__ == '__main__':
+    big_question = set()
     for magical_word in all_possible_words():
         if you_do_not_yammer_over_the(magical_word):
-            question.add(magical_word)
-    ask(question)
-
-
-if __name__ == '__main__':
-    main()
+            big_question.add(magical_word)
+    ask(big_question)
